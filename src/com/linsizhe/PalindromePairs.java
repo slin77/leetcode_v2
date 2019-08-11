@@ -1,8 +1,6 @@
 package com.linsizhe;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 class PalindromePairs {
     class TrieNode {
@@ -118,5 +116,8 @@ class PalindromePairs {
         String[] inputs = {"abcd","dcba","lls","s","sssll"};
         PalindromePairs pp = new PalindromePairs();
         System.out.println(pp.palindromePairs(inputs));
+        System.out.println('0' - 0);
+        int[][] tests = {{1, 2}, {3, 4}};
+
     }
 }
