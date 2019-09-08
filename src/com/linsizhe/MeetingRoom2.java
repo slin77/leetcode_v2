@@ -11,8 +11,7 @@ import java.util.PriorityQueue;
 public class MeetingRoom2 {
     public int minMeetingRooms(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
-        PriorityQueue<int[]> pq = new PriorityQueue(50,
-                Comparator.<int[]>comparingInt(interval -> interval[1]));
+        PriorityQueue<int[]> pq = new PriorityQueue(Comparator.<int[]>comparingInt(interval -> interval[1]));
         // Note: java priorityQueue is by default min queue.
         int max = 0;
         for (int i = 0; i < intervals.length; i++) {
