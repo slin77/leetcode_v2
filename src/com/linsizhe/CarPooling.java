@@ -1,12 +1,18 @@
 package com.linsizhe;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.*;
 
 // Greedy + schedule with capacity Similar to MeetingRoom2
 // core thought: sort by start time + pq track all current + evacuate by order
 public class CarPooling {
+
+    class Security{
+        double p;
+        double s;
+        double a;
+    }
+
+
     public boolean carPooling(int[][] trips, int capacity) {
         Arrays.sort(trips, Comparator.comparingInt(trip -> trip[1]));
         PriorityQueue<int[]> pq = new PriorityQueue(Comparator.<int[]>comparingInt(trip -> trip[2]));
