@@ -1,8 +1,9 @@
 package com.linsizhe.facebook;
 
+// https://leetcode.com/problems/binary-tree-maximum-path-sum/
+
 // note:
 // a "path" in this problem is sth follow child-parent-child 一笔画
-
 // key: recursion do one thing, while accumulator do another within recursion.
 public class BinaryTreeMaximumPathSum {
     private int maxSoFar;
