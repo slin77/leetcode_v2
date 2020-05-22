@@ -1,7 +1,9 @@
 package com.linsizhe.facebook;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.PriorityQueue;
 
 // template question for a sliding window algorithm
 public class FindAllAnagram {
@@ -72,5 +74,10 @@ public class FindAllAnagram {
         sb.append(1);
         String str = sb.toString();
         System.out.println(str.charAt(0));
+        int[] tes = {0, 1};
+
+        boolean a;
+        int s = 0 % (-1);
+        int h = 0;
     }
 }
