@@ -1,9 +1,6 @@
 package com.linsizhe.facebook;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 // template question for a sliding window algorithm
 public class FindAllAnagram {
@@ -79,5 +76,9 @@ public class FindAllAnagram {
         boolean a;
         int s = 0 % (-1);
         int h = 0;
+
+        HashSet<Integer> out = new HashSet<>();
+        int[] arr = new int[out.size()];
+        out.<Integer>toArray();
     }
 }
