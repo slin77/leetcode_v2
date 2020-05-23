@@ -70,7 +70,7 @@ public class FindAllAnagram {
 
         sb.append(1);
         String str = sb.toString();
-        System.out.println(str.charAt(0));
+        //System.out.println(str.charAt(0));
         int[] tes = {0, 1};
 
         boolean a;
@@ -80,5 +80,8 @@ public class FindAllAnagram {
         HashSet<Integer> out = new HashSet<>();
         int[] arr = new int[out.size()];
         out.<Integer>toArray();
+        int res = 1 / 4;
+        System.out.println(res);
+
     }
 }

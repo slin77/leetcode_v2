@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 // intersect of 2 arrays.
+// https://leetcode.com/problems/intersection-of-two-arrays/
 public class IntersectionOfTwoArrays {
     public int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
