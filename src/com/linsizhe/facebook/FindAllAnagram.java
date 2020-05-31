@@ -60,6 +60,7 @@ public class FindAllAnagram {
         return out;
     }
 
+    // scratch pad
     public static void main(String[] args) {
         int i = Integer.valueOf("-1");
         int j = 0;
@@ -83,5 +84,10 @@ public class FindAllAnagram {
         int res = 1 / 4;
         System.out.println(res);
 
+        List<String> strlist = new ArrayList<>();
+        strlist.add(Integer.toString(12));
+        System.out.println(Integer.toString(12));
+
+        ArrayList<String> out1 = new ArrayList<>();
     }
 }
