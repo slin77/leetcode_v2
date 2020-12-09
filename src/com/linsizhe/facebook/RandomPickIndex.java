@@ -32,7 +32,7 @@ public class RandomPickIndex {
     // we have n sample ith on is getting picked at 1/i
     // so eventually we get equal probability of picking each of
     // them
-    // for example: 1st one is 1 * 1/2 * 2/3 * 3/4 ... (each product is prod of keeping it)
+    // for example: 1st one is 1 * 1/2 * 2/3 * 3/4 ... (each product is prob of keeping it)
     //              2nd 1/2 * 2/3 ...
     //              3nd 1/3 * 3/4 ...
     public RandomPickIndex(int[] nums) {
@@ -45,8 +45,8 @@ public class RandomPickIndex {
         int res = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == target) {
-                if (rand.nextInt(++count) == 0) {
-                    res = i;
+                if (rand.nextInt(++count) == 0) { // rand(n) == 0 has 1 / n probability
+                    res = i; // prod of using a new one in each iteration is 1 / n. so keep old is n - 1 / n
                 }
             }
         }
