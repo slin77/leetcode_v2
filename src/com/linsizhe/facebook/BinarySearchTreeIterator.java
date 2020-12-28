@@ -4,12 +4,15 @@ import java.util.Stack;
 
 //https://leetcode.com/problems/binary-search-tree-iterator/
 public class BinarySearchTreeIterator {
-    // 1. all the way left, pop stack, print(visit), pop stack(visit!) right, all the way left
     class BSTIterator {
 
         Stack<TreeNode> stack;
 
 
+        // 1. en-stack all the way left
+        // 2. top of the stack is next element
+        // 3. when pop out, enqueue its right's all the way left. (if its right is null, it does not matter, because top of the queue is still
+        // the next smallest.
         public BSTIterator(TreeNode root) {
             stack = new Stack<TreeNode>();
             TreeNode current = root;
@@ -21,18 +24,18 @@ public class BinarySearchTreeIterator {
 
         /** @return the next smallest number */
         public int next() {
-            int toRet = 0;
-            TreeNode current = null;
-            if (!stack.isEmpty()) {
-                current = stack.pop();
-                toRet = current.val;
-                current = current.right;
+            // Top of the stack is always the next element.
+            TreeNode cur = stack.pop();
+            TreeNode toReturn = cur;
+
+            // When pop a node. Its right child's tree's leftmost could have next smallest.
+            // so enque all its right child's leftmost
+            cur = cur.right;
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
             }
-            while (current != null) {
-                stack.push(current);
-                current = current.left;
-            }
-            return toRet;
+            return toReturn.val;
         }
 
         /** @return whether we have a next smallest number */
