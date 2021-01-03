@@ -25,7 +25,8 @@ public class Playground {
         System.out.println(25 % 26);
         HashMap<Integer, Integer> freq = new HashMap<>();
         PriorityQueue pq = new PriorityQueue();
-        pq.remove()
+        LinkedList ll;
+    }
 }
 
 
