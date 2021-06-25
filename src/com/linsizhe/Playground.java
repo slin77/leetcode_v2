@@ -37,6 +37,9 @@ public class Playground {
 
         List<int[]> list = new ArrayList<>();
         Arrays.copyOfRange(new int[]{1, 2}, 0, 1);
+
+        List<Boolean> ls = new ArrayList<>();
+        ls.add
     }
 }
 
