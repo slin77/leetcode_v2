@@ -30,4 +30,22 @@ public class ContinuousSubarraySum {
         }
         return false;
     }
+
+    // Similar of two sum but module!
+    public boolean checkSubarraySum2(int[] nums, int k) {
+        //presum of mods
+        // note that still we need track idx, since presum(i - (i - 1)) will be
+        // just array size of 1 !!!1
+        HashMap<Integer, Integer> presum = new HashMap();
+        presum.put(0, -1);
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            nums[i] = sum % k;
+            int idx = presum.getOrDefault(nums[i], i + 1);
+            if (i - idx > 1) return true;
+            presum.put(nums[i], Math.min(i, idx));
+        }
+        return false;
+    }
 }

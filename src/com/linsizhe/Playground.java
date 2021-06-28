@@ -27,20 +27,7 @@ public class Playground {
 //        PriorityQueue pq = new PriorityQueue();
 //        LinkedList ll;
 //        Comparator.<int[]>comparingInt(a -> a[1]);
-
-        //System.out.println(out);
-        System.out.println('0' + 0);
-        int[] i= new int[] {1, 2, 3, 4};
-        System.out.println(new String(new char[]{(char) (i[0] + 48), 1 + 48, 2 + 48, 3 + 48}));
-
-        System.out.println(Arrays.toString(new int[]{1, 2, 3, 4}));
-
-        List<int[]> list = new ArrayList<>();
-        Arrays.copyOfRange(new int[]{1, 2}, 0, 1);
-
-        List<Boolean> ls = new ArrayList<>();
-        ls.add
-    }
+}
 }
 
 
