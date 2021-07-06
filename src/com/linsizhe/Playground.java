@@ -28,6 +28,9 @@ public class Playground {
 //        LinkedList ll;
 //        Comparator.<int[]>comparingInt(a -> a[1]);
          System.out.println((char) (1 + 'a'));
+         StringBuilder sb = new StringBuilder();
+         LinkedList ls = new LinkedList();
+         //ls.addFirst();
 }
 }
 
