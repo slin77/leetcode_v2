@@ -1,7 +1,9 @@
 package com.linsizhe.facebook;
 
 
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 // https://leetcode.com/problems/nested-list-weight-sum/submissions/
 public class NestedWeightSum {
@@ -38,4 +40,35 @@ public class NestedWeightSum {
         }
         return sum;
     }
-}
+
+    // same as leval order traversal!
+    public int depthSumBFS(List<NestedWeightSum.NestedInteger> nestedList) {
+        Queue<NestedInteger> q = new LinkedList();
+        for (NestedInteger ni : nestedList) {
+            q.add(ni);
+        }
+        int level = 1;
+        int sum = 0;
+        while (!q.isEmpty()) {
+            // property of BFS!
+            // we can do layer by layer
+            // Keep all in queue at the same layer!
+            // bfs can do by track layer be current q size
+            // pop them all at single interation
+            int curLayerSize = q.size();
+            for (int i = 0; i < curLayerSize; i++) {
+                NestedInteger node = q.poll();
+                if (node.isInteger()) {
+                    sum += level * node.getInteger();
+                } else {
+                    for (NestedInteger newNode : node.getList()) {
+                        q.offer(newNode);
+                    }
+                }
+            }
+            level++;
+        }
+        return sum;
+    }
+
+    }
