@@ -31,6 +31,8 @@ public class Playground {
          StringBuilder sb = new StringBuilder();
          LinkedList ls = new LinkedList();
          //ls.addFirst();
+        PriorityQueue<Double> pq = new PriorityQueue<>();
+        Arrays.copyOfRange()
 }
 }
 
