@@ -24,7 +24,7 @@ public class Playground {
 //        System.out.println('z' - 'a');
 //        System.out.println(25 % 26);
 //        HashMap<Integer, Integer> freq = new HashMap<>();
-//        PriorityQueue pq = new PriorityQueue();
+         PriorityQueue pq = new PriorityQueue();
 //        LinkedList ll;
 //        Comparator.<int[]>comparingInt(a -> a[1]);
          System.out.println((char) (1 + 'a'));
