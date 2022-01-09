@@ -24,15 +24,17 @@ public class Playground {
 //        System.out.println('z' - 'a');
 //        System.out.println(25 % 26);
 //        HashMap<Integer, Integer> freq = new HashMap<>();
-         PriorityQueue pq = new PriorityQueue();
-//        LinkedList ll;
-//        Comparator.<int[]>comparingInt(a -> a[1]);
-         System.out.println((char) (1 + 'a'));
-         StringBuilder sb = new StringBuilder();
-         LinkedList ls = new LinkedList();
-         //ls.addFirst();
-        PriorityQueue<Double> pq = new PriorityQueue<>();
-        Arrays.copyOfRange()
+//         PriorityQueue pq = new PriorityQueue();
+////        LinkedList ll;
+          Comparator.<int[]>comparingInt(a -> a[1]);
+//         System.out.println((char) (1 + 'a'));
+//         StringBuilder sb = new StringBuilder();
+//         LinkedList ls = new LinkedList();
+//         //ls.addFirst();
+//        PriorityQueue<Double> pq = new PriorityQueue<>();
+//        Arrays.copyOfRange()
+            HashMap<Integer, Integer> map = new HashMap<>();
+            Collection<Integer> c = map.values();
 }
 }
 
