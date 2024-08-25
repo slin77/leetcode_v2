@@ -3,7 +3,7 @@ package com.linsizhe.hiring2024;
 // https://leetcode.com/problems/powx-n/?envType=company&envId=facebook&favoriteSlug=facebook-six-months
 public class PowXN50 {
     public double myPow(double x, int n) {
-        int a = n;
+
         if (n == Integer.MIN_VALUE) {
             return 1 / (myPow(x, Integer.MAX_VALUE) * x);
         }
