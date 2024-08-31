@@ -31,4 +31,3 @@ public class IntersectionOfThreeSortedArray1213 {
         return out;
     }
 }
-}
