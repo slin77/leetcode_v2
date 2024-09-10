@@ -14,12 +14,16 @@ public class LargestRectangleInHistogram {
     // this is property of stack)
     // first smaller element on right: element to insert when pop it out.
     // can find both in single pass!
+    // nums[i] is the smallest element from right - left;
+    // see: https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/
 
     // mono descreasing stack:
     // first bigger element on left: on top of stack when push element * (remember
     // this is property of stack)
     // first bigger on right: element to insert when pop it out.
     // can fint both in single pass!
+    // nums[i] is the greatest element from right - left;
+
     public int largestRectangleArea(int[] heights) {
         // find left and right first element smaller than i, this is the area that i can
         // cover
